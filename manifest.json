@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Dark_Pattern_Buster",
+    "version": "1.0",
+    "description": "Our extension is a powerful tool that detects and alerts users about deceptive online practices, enhancing user protection.",
+    "permissions": [
+      "activeTab"
+    ],
+    "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "main.html"
+    },
+    "icons": {
+      "48": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["main.js"]
+      }
+    ]
+  }
+  
